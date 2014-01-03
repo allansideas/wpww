@@ -10,3 +10,6 @@ gem 'playhouse-sinatra', git: 'git://github.com/enspiral/playhouse-sinatra.git'
 
 
 gem 'rack-cors', :require => 'rack/cors'
+
+#dev
+gem 'shotgun'
