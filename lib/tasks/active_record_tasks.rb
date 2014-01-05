@@ -10,8 +10,8 @@ DatabaseTasks.db_dir = db_dir
 DatabaseTasks.database_configuration = YAML.load(File.read(File.join(config_dir, 'database.yml')))
 DatabaseTasks.migrations_paths = File.join(db_dir, 'migrate')
 
-require File.join(db_dir, 'seeds')
-DatabaseTasks.seed_loader = Wpww::SeedLoader
+#require File.join(db_dir, 'seeds')
+#DatabaseTasks.seed_loader = Wpww::SeedLoader
 
 task :environment do
   ActiveRecord::Base.configurations = DatabaseTasks.database_configuration

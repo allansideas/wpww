@@ -1,0 +1,12 @@
+-
+  get:
+    route: 'groups/:identifier'
+    command: show_groups
+    params: '*identifier'
+    description: Returns a specific identifier from the provided identifier
+-
+  post:
+    route: 'groups'
+    command: create_groups
+    params: '*description'
+    description: Create a group

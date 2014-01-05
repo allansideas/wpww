@@ -6,7 +6,7 @@ require_all File.dirname(__FILE__), 'contexts/**/*.rb'
 module Wpww
   class WpwwPlay < Playhouse::Play
     context Test
-    #contexts_for TODO
+    contexts_for Groups
 
     def self.name
       'wpww'

@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/enspiral/playhouse-sinatra.git
-  revision: fff11a1ebcfded42574067815671a2fc798dc787
+  remote: git://github.com/allansideas/playhouse-sinatra.git
+  revision: 7e119e6b3a3908694c8fc52b18e1ca84cc250347
   specs:
     playhouse-sinatra (0.1.0)
       playhouse
