@@ -1,4 +1,4 @@
-set :application, "wpww-api"
+set :application, "wowwi"
 set :repository,  "git@github.com:allansideas/#{application}.git"
 set :use_sudo,    false
 
@@ -13,7 +13,7 @@ task :staging do
   set :domain,    "woww.instantiate.me"
   set :branch,    "staging"
   set :rails_env, "staging"
-  set :deploy_to, "/home/#{user}/#{application.gsub('-','/')}/"
+  set :deploy_to, "/home/#{user}/api/"
   set :bundle_without, [:development, :test]
 
   role :web, domain
