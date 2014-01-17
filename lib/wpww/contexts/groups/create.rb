@@ -3,7 +3,8 @@ require 'playhouse/context'
 module Wpww
   module Groups
     class Create < Playhouse::Context
-      actor :description, optional: true
+      actor :name
+      actor :description
 
       def perform
         data = Group.create!(actors)

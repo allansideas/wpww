@@ -8,7 +8,6 @@ module Wpww
 
       def perform
         data = Group.find_by_identifier(identifier)
-        data
       end
     end
   end

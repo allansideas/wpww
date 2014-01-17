@@ -6,7 +6,7 @@ module Wpww
     has_many :users
 
     def generate_identifier
-      self.identifier = SecureRandom.urlsafe_base64 64
+      self.identifier = SecureRandom.urlsafe_base64 24
       self.identifier.upcase
     end
   end

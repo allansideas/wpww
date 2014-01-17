@@ -10,3 +10,28 @@
     command: create_groups
     params: '*description'
     description: Create a group
+
+#user routes
+-
+  post:
+    route: 'groups/:group_id/users'
+    command: create_users
+    params: '*group_id, *name, *amount_payed_cents, email, description'
+    description: Create user in a group
+-
+  get:
+    route: 'groups/:group_id/users'
+    command: list_users
+    params: '*group_id'
+-
+  delete:
+    route: 'users/:user_id'
+    command: delete_users
+    params: '*user_id'
+    description: remove a user
+-
+  put:
+    route: 'users/:user_id'
+    command: update_users
+    params: '*user_id, *name, *amount_payed_cents, email, description'
+    description: update a user

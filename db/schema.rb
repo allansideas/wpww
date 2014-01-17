@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 201401051454) do
 
   create_table "groups", force: true do |t|
+    t.string   "name"
     t.string   "description"
     t.string   "identifier"
     t.datetime "created_at"
@@ -21,9 +22,11 @@ ActiveRecord::Schema.define(version: 201401051454) do
   end
 
   create_table "users", force: true do |t|
+    t.integer  "group_id",          null: false
     t.string   "name"
     t.string   "email"
-    t.integer  "amount_payed_cents"
+    t.integer  "amount_paid_cents", null: false
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
