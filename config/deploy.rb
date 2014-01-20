@@ -34,6 +34,9 @@ namespace :site do
     rake_task("db:reset")
     rake_task("db:seed")
   end
+  task :migrate_db do
+    rake_task("db:migrate")
+  end
 end
 
 namespace :rake do

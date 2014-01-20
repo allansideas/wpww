@@ -35,3 +35,22 @@
     command: update_users
     params: '*user_id, *name, *amount_payed_cents, email, description'
     description: update a user
+
+#comments routes
+-
+  post:
+    route: 'groups/:group_id/comments'
+    command: create_comments
+    params: '*group_id, *name, description'
+    description: Create comment in a group
+-
+  get:
+    route: 'groups/:group_id/comments'
+    command: list_by_group_comments
+    params: '*group_id'
+-
+  delete:
+    route: 'comments/:comment_id'
+    command: delete_comments
+    params: '*comments_id'
+    description: remove a comment
