@@ -54,3 +54,17 @@
     command: delete_comments
     params: '*comments_id'
     description: remove a comment
+
+#line items
+-
+  post:
+    route: 'users/:user_id/line_items'
+    command: create_line_items
+    params: '*user_id, *name, *amount_in_cents'
+    description: Create line item for a user
+-
+  delete:
+    route: 'line_items/:line_item_id'
+    command: delete_line_items
+    params: '*line_item_id'
+    description: remove a line_item

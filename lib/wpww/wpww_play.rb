@@ -8,6 +8,7 @@ module Wpww
     contexts_for Comments
     contexts_for Groups
     contexts_for Users
+    contexts_for LineItems
 
     def self.name
       'wpww'
