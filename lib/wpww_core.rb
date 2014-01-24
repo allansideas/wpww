@@ -1,6 +1,7 @@
 require 'active_record'
 require 'sqlite3'
 require 'active_record/connection_adapters/sqlite3_adapter'
+require 'mail'
 require 'wpww/wpww_play'
 
 module Wpww

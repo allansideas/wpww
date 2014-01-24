@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 201401191354) do
   create_table "groups", force: true do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "owner_name"
+    t.string   "owner_email"
     t.string   "identifier"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -42,7 +44,6 @@ ActiveRecord::Schema.define(version: 201401191354) do
     t.string   "name"
     t.string   "email"
     t.integer  "amount_paid_cents", null: false
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

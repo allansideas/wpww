@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :email
       t.integer :amount_paid_cents, null: false
-      t.text :description
 
       t.timestamps
     end
